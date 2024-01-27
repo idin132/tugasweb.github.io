@@ -1,0 +1,372 @@
+.navbar-nav {
+    margin-left: 400px;
+}
+
+.tombol{
+    background-color: transparent;
+    border: 2px solid #2A9DD6; 
+    font-weight: 500; 
+    color: #565656;
+    transition: 0.3s;
+}
+
+.tombol:hover{
+    background-color: #2A9DD6;
+    color: white;
+}
+
+.btn-i{
+    border: none;
+    background: transparent;
+}
+
+.garis{
+    width: 100%;
+    height: 2px;
+    background-color: #2a9dd6;
+    margin-top: 20px;
+}
+
+.kotak{
+    width: 100%;
+    height: 25px;
+    background-color: black;
+}
+
+.header-contact{
+    color: white;
+}
+
+.dropbtn {
+  background-color: transparent; 
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color:transparent;}
+
+.jumbotron{
+    width: 100%;
+    height: 300px;
+    background-color: #565656;
+}
+
+.heading {
+  padding-bottom: 10px;
+}
+
+#ekstrakulikuler {
+  background-color: #ddd;
+  padding: 80px 0;
+}
+
+#ekstrakulikuler .section-body-item {
+  display: flex;
+  background-color: #15477a;
+  border-radius: 5px;
+  padding: 20px;
+  color: #f2c808;
+  height: 200px;
+  align-items: center;
+  font-size: 25px;
+}
+
+#ekstrakulikuler .section-body-item h4 {
+  font-size: 23px;
+  font-weight: 400;
+}
+
+#ekstrakulikuler .section-body .row:first-of-type {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #212529;
+  
+}
+
+.brand h1 {
+  color: #ffc107;
+}
+
+.col-md-4 p {
+  color: white;
+}
+
+.footer-col-1 h2 {
+  color: #ffc107;
+}
+
+.footer-col-1 ul {
+  color: white;
+}
+
+.footer-col-2 h2 {
+  color: #ffc107;
+}
+
+.div-gallery-feed{
+	margin-bottom: 50px;
+}
+
+.title-gallery-feed{
+	 text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery-feed img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.gallery-feed img:hover {
+	filter:none;
+	-webkit-filter:grayscale(0);
+}
+
+.center{
+	width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.more-gallery-feed, .read-more{
+    color: #666;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    border: 2px solid #666;
+    width: 200px;
+}
+
+.more-gallery-feed:hover, .read-more:hover {
+	color: #000;
+	border: 2px solid #000;
+	text-decoration: none;
+}
+
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+
+
+.container {
+    margin-top: 100px;
+}
+
+.container .row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    padding: 0;
+    margin: 0 !important;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 280px;
+    max-height: 340px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.card .card-image {
+    width: 100%;
+    max-height: 340px;
+}
+
+.card .card-image img {
+    width: 100%;
+    max-height: 340px;
+    object-fit: cover;
+}
+
+.card .card-content {
+    position: absolute;
+    bottom: -180px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    min-height: 140px;
+    width: 100%;
+    transition: bottom .4s ease-in;
+    box-shadow: 0 -10px 10px rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card:hover .card-content {
+    bottom: 0px;
+}
+
+.card:hover .card-content h4,
+.card:hover .card-content h5 {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+.card .card-content h4,
+.card .card-content h5 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    transition: 0.8s;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(-40px);
+    transition-delay: 0.2s;
+}
+
+.card .card-content h5 {
+    transition: 0.5s;
+    font-weight: 200;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+
+.card .card-content .social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+
+.card .card-content .social-icons li {
+    margin: 10px;
+    transition: 0.5s;
+    transition-delay: calc(0.15s * var(--i));
+    transform: translateY(50px);
+}
+
+
+.card:hover .card-content .social-icons li {
+    transform: translateY(20px);
+}
+
+.card .card-content .social-icons li a {
+    color: #fff;
+}
+
+.card .card-content .social-icons li a span {
+    font-size: 1.3rem;
+}
+
+@media(max-width: 991.5px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .container .row .col-lg-4 {
+        margin: 20px 0px;
+    }
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(163, 158, 158)
+}
+
+#floatingButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer-col {
+  text-align: center;
+}
+
+.footer-col h1 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.footer-col p {
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer-col {
+      text-align: left;
+  }
+
+  #footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+  }
+
+  #footer .row {
+      width: 100%;
+      flex-wrap: wrap;
+  }
+
+  .footer-col {
+      width: 100%;
+      max-width: 300px;
+  }
+}
